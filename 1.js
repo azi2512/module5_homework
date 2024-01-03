@@ -1,11 +1,11 @@
-let a = prompt('Введите значение');
-let b = +a;
+let b = +prompt('Введите значение');
+
 if (typeof b === 'number' && !isNaN(b)) {
   if (b % 2 == 0) {
-    alert('Чётное')
+    console.log('Чётное')
   } else {
-    alert('Нечетное')
+    console.log('Нечетное')
   }  
 } else {
-  alert('Упс, кажется, вы ошиблись')
+  console.log('Упс, кажется, вы ошиблись')
 }
