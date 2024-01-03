@@ -1,5 +1,8 @@
-let arr = [5, 2, 5, 0, true, 'hj'];
+let map = new Map();
 
-for (let i = 0; i < arr.length; i++) {
-  console.log(`Ключ — ${i}, значение — ${arr[i]}`)
+map.set("apple", "green");
+map.set("strawberry", "red");
+
+for(let keys of map.keys()) {
+  console.log(`Ключ — ${keys}, значение — `+ map.get(keys));
 }
